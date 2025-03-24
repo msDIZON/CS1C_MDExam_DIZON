@@ -1,11 +1,11 @@
 let groceryList = []; 
-let addItems = prompt("Do you want to create a grocery list? (y/n):");
+let add_items = prompt("Do you want to create a grocery list? (y/n):");
 
 
-if (addItems.toLowerCase() === 'y') {
-    let numberOfItems = parseInt(prompt("How many items do you want to register?"));
+if (add_items.toLowerCase() === 'y') {
+    let item_number = parseInt(prompt("How many items do you want to register?"));
 
-    for (let i = 0; i < numberOfItems; i++) {
+    for (let i = 0; i < item_number; i++) {
         let item = prompt("Enter grocery item " + (i + 1) + ":");
         groceryList.push(item); 
     }
